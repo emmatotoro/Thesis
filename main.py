@@ -83,18 +83,7 @@ question10 = st.radio("Neat, tidy",
 #with col3:
    # st.button('3')
 
-responses = 'question1'
 
 
-import gspread
-from oauth2client.service_account import ServiceAccountCredentials
 
-scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
-creds = ServiceAccountCredentials.from_json_keyfile_name('credentials.json', scope)
 
-client = gspread.authorize(creds)
-
-sheet = client.open('My Streamlit Responses').sheet1
-
-response_data = [responses['question1']]
-sheet.append_row(response_data)
