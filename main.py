@@ -16,7 +16,7 @@ st.write("People’s values are an important aspect of their personality, and pe
 st.write("**Question 1.** Please guess how the person responded to these value statements.")
 
 from PIL import Image
-image = Image.open("/Users/emmakehoe/Desktop/image1.jpg")
+image = Image.open("image1.jpg")
 st.image(image, width = 200)
 
 col1, col2 = st.columns(2)
