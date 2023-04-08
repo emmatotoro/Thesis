@@ -23,7 +23,7 @@ col1, col2 = st.columns(2)
 
 question1 = st.radio("Control over others",
                   ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"
-                  ], 1, horizontal=True,
+                  ], 1, horizontal=True, disabled = True
                   )
 
 question2 = st.radio("Achieving goals",
