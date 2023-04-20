@@ -4,8 +4,8 @@ from PIL import Image
 from random import randint, sample
 from time import sleep
 
-favicon = Image.open("/Users/emmakehoe/Downloads/uwindsor_favicon.ico")
-facialimage = Image.open("/Users/emmakehoe/Desktop/image1.jpg")
+favicon = Image.open("uwindsor_favicon.ico")
+facialimage = Image.open("image1.jpg")
 participant_data = {}
 question_dict = {}
 
