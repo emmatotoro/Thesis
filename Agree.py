@@ -211,12 +211,13 @@ with st.empty():
             conf.radio("Neat, tidy",
                        ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"
                         ], int(confederate_df.at[0, "pQ10"]) - 1, horizontal=True, key="q10-conf", disabled=True)
+               
+              if st.button("Redirect"):
+                   st.redirect("https://wlu.ca1.qualtrics.com/jfe/form/SV_3t0XPINHJ4whqpo")
     else:
         st.session_state.page = 0
         
- 
-    if st.button("Redirect"):
-        st.redirect("https://wlu.ca1.qualtrics.com/jfe/form/SV_3t0XPINHJ4whqpo")
+
 
 
 
