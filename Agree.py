@@ -5,7 +5,7 @@ from random import randint, sample
 from time import sleep
 
 favicon = Image.open("uwindsor_favicon.ico")
-facialimage = Image.open("image1.jpg")
+facialimage = Image.open("image4.jpg")
 participant_data = {}
 question_dict = {}
 
@@ -42,18 +42,18 @@ with st.empty():
     if st.session_state.page == 0:
         with st.container():
             st.title("Interpersonal Perception Task")
-            st.subheader("Instructions")
+            st.subheader("Overview")
 
             st.write("Researchers have long tried to identify the predictors of success. Especially in a highly diverse society such as Canada, interpersonal skills are critical. Perceiving others accurately is important. We have found that people whose perceptions are accurate regardless of another’s race, ethnicity, or gender, are particularly likely to succeed.")
-            st.write("Based on foundational research conducted at Harvard University and Stanford University, our research group has developed a measure of interpersonal perception, which allows us to predict career success. Research shows that some people are surprisingly good at reading personality information from a person’s face. Moreover, our research shows that people who are good at interpersonal perception succeed regardless of their academic success. That is, regardless of the degrees they hold, people who are good at perceiving others tend to live longer, have higher incomes, have more rewarding relationships, and report higher life satisfaction.")
-            st.write("We are now at the end of a process in which we develop a shorter version of our test of interpersonal perception. In our short test, we want you to look at just 40 faces and make predictions about them. We believe that our test of only 40 faces will perform about as good as our other much longer test battery. We would like for you to work on two versions of our interpersonal perception task:")
-            st.write("At the end of the study, you will receive your accuracy based on the match between your answer and actual answers we collected from individuals displayed in the photos.")
+            st.write("Based on foundational research conducted at the University of Windsor, our research group has developed a measure of interpersonal perception, which allows us to predict career success. Research shows that some people are surprisingly good at reading personality information from a person’s face. Moreover, our research shows that people who are good at interpersonal perception succeed regardless of their academic success. That is, regardless of the degrees they hold, people who are good at perceiving others tend to live longer, have higher incomes, have more rewarding relationships, and report higher life satisfaction.")
+            st.write("We are now at the end of a process in which we develop a shorter version of our test of interpersonal perception. In our short test, we want you to look at just 6 faces and make predictions about them. We believe that our test of only 6 faces will perform about as good as our other much longer test battery.")
+            st.write("At the end of the study, you will receive your accuracy based on the match between your answer and answers we collected from a panel of personality experts who have conducted extensive personality assessments on these individuals, as well as your performance relative to other participants who have previously completed the study.")
 
-
-            st.subheader("Person Perception Task")
-            st.write("People’s values are an important aspect of their personality, and personality is reflected in the way they look. In the next screen, a series of 8 facial photos will be presented. For each photo, please guess to what extent a person may have or may not have endorsed each value statement. The person used the same scale as you before with 1 = *Not at all important to me*, to 5 = *Very important to me*. Please guess how the person in the picture responded.")
-            st.write("**Question 1.** Please guess how the person responded to these value statements.")
-
+            st.subheader("Value Prediction Task")
+            st.write("People’s values are an important aspect of their personality, and personality is reflected in the way they look.")
+            st.write("In the next screen, a series of 3 facial photos will be presented. A panel of personality experts has provided validated ratings based on assessments of personality and values for each individual presented in the image.")
+            st.write("For each photo, please guess to what extent personality psychologists may have or may not have endorsed each value statement for the individual depicted in the photo. The personality psychologists used the same scale as you with 1 = *Not at all important to me*, to 10 = *Very important to me*. Please guess how personality psychologists rated the values of the individual in the picture.")
+            
             buff1, col1, buff2 = st.columns([0.5,1,0.5])
 
             col1.image(facialimage, width = 250)
