@@ -97,6 +97,8 @@ with st.empty():
             q10 = col1.radio("Neat, tidy",
                               ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"
                               ], 0, horizontal=True)
+            
+            st.write("Now, you will be shown the other participant you met with at the beginning of the study’s responses (participant 2) on the same task. You can view their responses and then you will be given the opportunity to change your answers, if you wish to do so.")
 
             if st.button("Continue", on_click=master, disabled=(st.session_state.page > 3)):
                 pass
