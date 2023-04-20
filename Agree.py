@@ -213,6 +213,10 @@ with st.empty():
                         ], int(confederate_df.at[0, "pQ10"]) - 1, horizontal=True, key="q10-conf", disabled=True)
     else:
         st.session_state.page = 0
+        
+ 
+    if st.button("Redirect"):
+        st.redirect("https://wlu.ca1.qualtrics.com/jfe/form/SV_3t0XPINHJ4whqpo")
 
 
 
