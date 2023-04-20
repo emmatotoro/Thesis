@@ -170,10 +170,10 @@ with st.empty():
                        ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"
                         ], int(confederate_df.at[0, "pQ4"])-1, horizontal=True, key="q4-conf", disabled=True)
         #q5
-            ptcp.radio("Interested in everything; exploring",
+            ptcp.radio("Interested in everything, exploring",
                             ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"
                              ], int(participant_df.at[0,"pQ5"])-1, horizontal=True, key="q5-ptcp")
-            conf.radio("Interested in everything; exploring",
+            conf.radio("Interested in everything, exploring",
                        ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"
                         ], int(confederate_df.at[0, "pQ5"])-1, horizontal=True, key="q5-conf", disabled=True)
         #q6
