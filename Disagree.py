@@ -5,7 +5,7 @@ from random import randint, sample
 from time import sleep
 
 favicon = Image.open("uwindsor_favicon.ico")
-facialimage = Image.open("image1.jpg")
+facialimage = Image.open("image4.jpg")
 participant_data = {}
 question_dict = {}
 
@@ -75,7 +75,7 @@ with st.empty():
                               ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"
                               ], 0, horizontal=True)
 
-            q5 = col1.radio("Interested in everything; exploring",
+            q5 = col1.radio("Interested in everything, exploring",
                               ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"
                               ], 0, horizontal=True)
 
